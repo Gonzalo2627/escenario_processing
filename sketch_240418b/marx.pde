@@ -1,6 +1,6 @@
 class payacho {
   private PVector posicion;
-  private PVector velocidad;;
+  private PVector velocidad;
   private PImage img2;
   private int anchoLienzo;
   private int altoLienzo;

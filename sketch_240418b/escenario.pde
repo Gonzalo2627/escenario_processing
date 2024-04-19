@@ -1,9 +1,9 @@
-PImage imgA;
-color morado= color(137,133,216,500);
+private PImage imgA;
+private color morado= color(137,133,216,500);
 private payacho Marx;
 private tragon kirby;
 
-void setup() {
+public void setup() {
   size(600, 600);
   imgA = loadImage("fondo.png");
   kirby = new tragon();
@@ -13,7 +13,7 @@ void setup() {
   Marx = new payacho(width, height); // Pasa las dimensiones del lienzo al constructor de payacho
 }
 
-void draw() {
+public void draw() {
   
   
   // Dibuja el fondo sin desplazamiento
