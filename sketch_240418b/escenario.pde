@@ -10,13 +10,11 @@ public void setup() {
   kirby.setPosicion(new PVector(width/2,height/2));
   kirby.setVelocidad(new PVector(10,10));
   
-  Marx = new payacho(width, height); // Pasa las dimensiones del lienzo al constructor de payacho
+  Marx = new payacho(width, height);
 }
 
 public void draw() {
   
-  
-  // Dibuja el fondo sin desplazamiento
   image(imgA, 300, 300,width, height );
   tint(morado);
   
@@ -45,8 +43,8 @@ public void keyPressed(){
 
 public void actualizarVelocidadKirby(){
   if(kirby.getPosicion().x>(width/2)){
-    kirby.getVelocidad().x=30;
+    kirby.getVelocidad().x=15;
   }else{
-    kirby.getVelocidad().x=10;
+    kirby.getVelocidad().x=15;
   }
 }

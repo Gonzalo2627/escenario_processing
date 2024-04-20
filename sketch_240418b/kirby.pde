@@ -3,8 +3,7 @@ class tragon{
   private PImage imagen;
   private PVector velocidad;
   private color morado= color(137,133,216,500);
-  
-  // CONSTRUCTOR 
+   
   public tragon(){
     imagen = loadImage("Kirby.png");
     tint(morado);
@@ -14,11 +13,6 @@ class tragon{
     imageMode(CENTER);
     image(imagen,posicion.x,500,80,80);
   }
-  /**
-  * Mueve la posicon hacia izquierda o derecha según lo 
-  * que se indique en el atributo velocidad
-  * direccion (0:izquierda; 1=derecha; 2 = arriba, 3= abajo)
-  */
   public void mover(int direccion){
     if(direccion==0){
       this.posicion.x-=this.velocidad.x;
